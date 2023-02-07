@@ -1,0 +1,23 @@
+{
+  "name": "nhl-game-schedule",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/joy": "5.0.0-alpha.54",
+    "@mui/material": "latest",
+    "axios": "1.1.3",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "latest"
+  },
+  "keywords": [],
+  "description": ""
+}
