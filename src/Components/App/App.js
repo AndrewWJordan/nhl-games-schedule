@@ -6,9 +6,8 @@ import axios from "axios";
 
 export default function App() {
   const dateObj = new Date();
-  const today = `${dateObj.getFullYear()}-${
-    dateObj.getMonth() + 1
-  }-${dateObj.getDate()}`;
+  const today = `${dateObj.getFullYear()}-${dateObj.getMonth() +
+    1}-${dateObj.getDate()}`;
   const fetchData = useCallback(() => {
     return axios.get(
       `https://statsapi.web.nhl.com/api/v1/schedule?date=${today}`
@@ -39,8 +38,8 @@ export default function App() {
       {games.length > 0 && (
         <Grid container spacing={2} zeroMinWidth>
           {games.map((game) => (
-            <Grid item xs={12} sm={6} lg={4}>
-                <GameCard key={game.gamePk} game={game} />
+            <Grid item xs={12} sm={6} lg={4} key={game.gamePk}>
+              <GameCard game={game} />
             </Grid>
           ))}
         </Grid>
