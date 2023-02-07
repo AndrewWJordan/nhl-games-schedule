@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 
 export default function GameCard({ game }) {
   return (
-    <Card variant="outlined" sx={{ width: 420 }}>
+    <Card variant="outlined" sx={{ boxShadow: 1 }}>
       <Typography variant="h2">{game.teams.away.team.name}</Typography>
       <Typography
         variant="subtitle2"

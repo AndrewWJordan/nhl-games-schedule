@@ -1,6 +1,5 @@
 import React, { useCallback } from "react";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
+import { Container, Typography, Grid } from "@mui/material";
 import useFetch from "./../../hooks/useFetch";
 import GameCard from "./../../Components/GameCard";
 import axios from "axios";
@@ -28,7 +27,7 @@ export default function App() {
   }
 
   return (
-    <Container maxWidth="sm" align="center">
+    <Container maxWidth="lg" align="center">
       <Typography variant="h1" gutterBottom>
         <img src="images/nhl.png" alt="NHL logo" />
         NHL Game Schedule
@@ -38,11 +37,13 @@ export default function App() {
       </Typography>
 
       {games.length > 0 && (
-        <>
+        <Grid container spacing={2} zeroMinWidth>
           {games.map((game) => (
-            <GameCard key={game.gamePk} game={game} />
+            <Grid item xs={12} sm={6} lg={4}>
+                <GameCard key={game.gamePk} game={game} />
+            </Grid>
           ))}
-        </>
+        </Grid>
       )}
     </Container>
   );

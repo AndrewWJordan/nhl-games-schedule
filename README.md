@@ -1,5 +1,4 @@
-# Create React App example
-
+# NHL Games Schedule
 ## How to use
 
 Download the example [or clone the repo](https://github.com/mui-org/material-ui):
@@ -24,13 +23,10 @@ or:
 
 [![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui-org/material-ui/tree/master/examples/create-react-app)
 
-## The idea behind the example
+## The idea behind the code
 
 <!-- #default-branch-switch -->
-
-This example demonstrates how you can use [Create React App](https://github.com/facebookincubator/create-react-app).
-It includes `@mui/material` and its peer dependencies, including `emotion`, the default style engine in MUI v5.
-If you prefer, you can [use styled-components instead](https://mui.com/guides/interoperability/#styled-components).
+The amazing NHL API presented a cool opportunity to generate a game schedule UI using React and Material UI all within Create React App.  
 
 ## What's next?
 
